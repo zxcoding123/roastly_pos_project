@@ -1,0 +1,25 @@
+
+@tailwind utilities;
+@import "tailwindcss";
+
+/* If you are using custom theme variables, put them here */
+@theme {
+  --font-sans: "Inter", "ui-sans-serif", "system-ui", sans-serif;
+}
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  @apply bg-[#050505] text-[#ededed] font-sans antialiased selection:bg-blue-500/30;
+}
+
+*{
+  font-family: 'DM Sans';
+}
+
+/* Subtle glow for accents */
+.glow {
+  box-shadow: 0 0 40px -10px rgba(59, 130, 246, 0.3);
+}
