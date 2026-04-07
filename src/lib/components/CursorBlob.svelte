@@ -21,7 +21,7 @@
 />
 
 <div
-  class="pointer-events-none fixed left-0 top-0 z-[9999] sm:hidden"
+  class="pointer-events-none fixed left-0 top-0 z-[9999] sm:hidden md:block block"
   style="
     transform: translate({$coords.x}px, {$coords.y}px) translate(-50%, -50%);
     opacity: {opacity};
