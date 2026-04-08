@@ -52,6 +52,10 @@
       </a>
     </div>
 
+      <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white mt-20 uppercase">
+    View Demo Below
+  </h1>
+
    <div class="mt-100 relative group"> <div class="absolute inset-0 -top-16 flex justify-center pointer-events-none">
 <div class="absolute inset-0 -top-15 md:-top-40 flex justify-center pointer-events-none scale-75 md:scale-100">
     
@@ -70,7 +74,9 @@
         <img src="{coffeeLogo3}" alt="" class="w-full h-full object-contain p-2" />
     </div>
 </div>
+
   </div>
+
 
   <div class="absolute -inset-1 bg-linear-to-r from-blue-500 to-emerald-500 rounded-3xl blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
   
