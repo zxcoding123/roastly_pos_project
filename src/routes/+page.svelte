@@ -1,8 +1,27 @@
 <script>
     import Features from "$lib/sections/Features.svelte";
     import AppSuite from "$lib/sections/AppSuite.svelte";
+    import coffeeLogo1 from '$lib/assets/coffee_pos_icon_v2.png';
+    import coffeeLogo2 from '$lib/assets/coffee_pos_icon_barista.png';
+    import coffeeLogo3 from '$lib/assets/coffee_pos_icon_order_taker.png';
     let email = $state("");
 </script>
+
+<style>
+  @keyframes floatInOut {
+    0%, 100% {
+      transform: translateY(var(--base-translate-y)) rotate(var(--base-rotate)) scale(1);
+    }
+    50% {
+      /* This is the "In/Out" movement */
+      transform: translateY(calc(var(--base-translate-y) - 15px)) rotate(var(--base-rotate)) scale(1.05);
+    }
+  }
+
+  .animate-float-loop {
+    animation: floatInOut 4s ease-in-out infinite;
+  }
+</style>
 
 <section class="relative min-h-[90vh] flex flex-col items-center justify-center px-6 pt-20">
   <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-150 h-75 bg-blue-500/10 blur-[120px] z-10"></div>
@@ -12,6 +31,9 @@
       <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
       Serving Dubai Coffee, Zamboanga
     </div> -->
+<h1 class="text-6xl md:text-8xl font-black tracking-tight text-[#4842a4] [text-shadow:4px_4px_0px_rgba(255,255,255,0.05)]">
+  ROASTLY.
+</h1>
 
     <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white">
       Modern Mobile-Friendly POS.<br />
@@ -29,15 +51,41 @@
       </a>
     </div>
 
-    <div class="mt-24 relative group">
-      <div class="absolute -inset-1 bg-linear-to-r from-blue-500 to-emerald-500 rounded-3xl blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
-      
-      <div class="relative bg-[#0a0a0a] border border-white/10 rounded-3xl p-4 shadow-2xl overflow-hidden aspect-video w-full flex items-center justify-center">
-        <span class="text-zinc-700 font-mono text-xs tracking-[0.2em] uppercase italic">
-          Preview of Coffee_POS App UI
-        </span>
-      </div>
+   <div class="mt-64 relative group"> <div class="absolute inset-0 -top-16 flex justify-center pointer-events-none">
+<div class="absolute inset-0 -top-24 flex justify-center pointer-events-none">
+    
+    <div class="mr-25 animate-float-loop w-24 h-32 md:w-32 md:h-40 bg-zinc-900 border border-white/10 rounded-2xl shadow-2xl overflow-hidden transition-all duration-700"
+         style="--base-rotate: -12deg; --base-translate-y: 32px; transform: translateX(-80px);">
+        <div class="w-full h-full">
+            <img src="{coffeeLogo2}" alt="Logo 1" class="w-full h-full object-cover [image-rendering:auto] transform-gpu backface-hidden" />
+        </div>
     </div>
+    
+    <div class="animate-float-loop [animation-delay:500ms] w-24 h-32 md:w-32 md:h-40 bg-zinc-900 border border-white/10 rounded-2xl shadow-2xl overflow-hidden z-10 transition-all duration-700"
+         style="--base-rotate: 0deg; --base-translate-y: -16px; transform: scale(1.1);">
+        <div class="w-full h-full">
+            <img src="{coffeeLogo1}" alt="Logo 2" class="w-full h-full object-cover [image-rendering:auto] transform-gpu backface-hidden" />
+        </div>
+    </div>
+    
+    <div class="ml-25 animate-float-loop [animation-delay:1000ms] w-24 h-32 md:w-32 md:h-40 bg-zinc-900 border border-white/10 rounded-2xl shadow-2xl overflow-hidden transition-all duration-700"
+         style="--base-rotate: 12deg; --base-translate-y: 32px; transform: translateX(80px);">
+        <div class="w-full h-full">
+            <img src="{coffeeLogo3}" alt="Logo 3" class="w-full h-full object-cover [image-rendering:auto] transform-gpu backface-hidden" />
+        </div>
+    </div>
+
+</div>
+  </div>
+
+  <div class="absolute -inset-1 bg-linear-to-r from-blue-500 to-emerald-500 rounded-3xl blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
+  
+  <div class="relative bg-[#0a0a0a] border border-white/10 rounded-3xl p-4 shadow-2xl overflow-hidden aspect-video w-full flex items-center justify-center z-20">
+    <span class="text-zinc-700 font-mono text-xs tracking-[0.2em] uppercase italic">
+      Coming Soon 01/04/2026 <br/> <br/> Preview of Roastly App UI
+    </span>
+  </div>
+</div>
   </div>
 </section>
 
