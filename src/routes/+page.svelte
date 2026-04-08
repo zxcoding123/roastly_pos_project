@@ -38,7 +38,8 @@
 
     <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white">
       Modern Mobile-Friendly POS.<br />
-      <span class="opacity-40">Resilient by design.</span>
+      <span class="opacity-60">Resilient by design.</span> <br/>
+   
     </h1>
 
     <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
@@ -92,6 +93,7 @@
   </div>
 </div>
   </div>
+  <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white mt-20 uppercase">Only for Android Phones.</h1>
 </section>
 
 <Features />
