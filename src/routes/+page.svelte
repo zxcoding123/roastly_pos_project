@@ -4,6 +4,7 @@
     import coffeeLogo1 from '$lib/assets/coffee_pos_icon_v2.png';
     import coffeeLogo2 from '$lib/assets/coffee_pos_icon_barista.png';
     import coffeeLogo3 from '$lib/assets/coffee_pos_icon_order_taker.png';
+    import video from '$lib/assets/demo.webm'; 
     let email = $state("");
 </script>
 
@@ -74,9 +75,14 @@
   <div class="absolute -inset-1 bg-linear-to-r from-blue-500 to-emerald-500 rounded-3xl blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
   
   <div class="relative bg-[#0a0a0a] border border-white/10 rounded-3xl p-4 shadow-2xl overflow-hidden aspect-video w-full flex items-center justify-center z-20">
-    <span class="text-zinc-700 font-mono text-xs tracking-[0.2em] uppercase italic">
-      Coming Soon 01/04/2026 <br/> <br/> Preview of Roastly App UI
-    </span>
+    <video 
+  controls 
+  muted 
+  className="w-full h-full object-cover"
+>
+  <source src={video} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
   </div>
 </div>
   </div>
