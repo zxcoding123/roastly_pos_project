@@ -2,14 +2,14 @@
   const founders = [
     {
       name: "Ahmad",
-      role: "AI Automation Architect and Full-stack Developer",
-      bio: "Full-stack developer focused on resilient, local-first systems and high-end UI/UX.",
+      role: "AI Automation Architect, Full-stack Developer, System Designer and UI/UX Lead",
+      bio: "Full-stack developer focused on resilient, local-first systems and high-end UI/UX. Specialist in AI automation and system design. Full-time Full-stack Mobile and Web Developer",
       image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Ahmad" 
     },
     {
       name: "Fahad",
       role: "Full-stack Developer and Documentation Specialist",
-      bio: "Specialist in robust backend architecture and seamless mobile integration.",
+      bio: "Specialist in robust backend architecture and seamless mobile integration. Business-minded full-stack developer with a focus on clear documentation and user-friendly design.",
       image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Fahad" 
     }
   ];
