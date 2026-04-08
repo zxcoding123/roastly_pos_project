@@ -74,7 +74,7 @@
 
   <div class="absolute -inset-1 bg-linear-to-r from-blue-500 to-emerald-500 rounded-3xl blur opacity-10 group-hover:opacity-20 transition duration-1000"></div>
   
-  <div class="relative bg-[#0a0a0a] border border-white/10 rounded-3xl p-4 shadow-2xl overflow-hidden aspect-video w-full flex items-center justify-center z-20">
+  <div class="relative bg-[#0a0a0a] border border-white/10 rounded-3xl  shadow-2xl overflow-hidden aspect-video w-full flex items-center justify-center z-20">
     <video 
   controls 
   muted 
