@@ -52,27 +52,21 @@
     </div>
 
    <div class="mt-100 relative group"> <div class="absolute inset-0 -top-16 flex justify-center pointer-events-none">
-<div class="absolute inset-0 -top-20 md:-top-40 flex justify-center pointer-events-none">
+<div class="absolute inset-0 -top-15 md:-top-40 flex justify-center pointer-events-none scale-75 md:scale-100">
     
-    <div class="mr-15 animate-float-loop w-20 h-28 md:w-32 md:h-40 bg-zinc-900 border border-white/10 rounded-xl md:rounded-2xl shadow-2xl overflow-hidden transition-all duration-700"
-         style="--x-spread: clamp(-130px, -25vw, -160px); --base-rotate: -12deg; --base-translate-y: 40px; --base-scale: 0.9;">
-        <div class="w-full h-full">
-            <img src="{coffeeLogo2}" alt="" class="w-full h-full object-cover transform-gpu" />
-        </div>
+    <div class="mr-5 animate-float-loop w-24 h-24 md:w-32 md:h-32 bg-[#4842a4] border border-white/10 rounded-2xl shadow-2xl overflow-hidden transition-all duration-700"
+         style="--x-spread: -80px; --base-rotate: -12deg; --base-translate-y: 40px; --base-scale: 0.8;">
+        <img src="{coffeeLogo2}" alt="" class="w-full h-full object-contain p-2" />
     </div>
     
-    <div class="animate-float-loop [animation-delay:800ms] w-20 h-28 md:w-32 md:h-40 bg-zinc-900 border border-white/10 rounded-xl md:rounded-2xl shadow-2xl overflow-hidden z-10 transition-all duration-700"
+    <div class="animate-float-loop [animation-delay:800ms] w-24 h-24 md:w-32 md:h-32 bg-[#4842a4] border border-white/10 rounded-2xl shadow-2xl overflow-hidden z-10 transition-all duration-700"
          style="--x-spread: 0px; --base-rotate: 0deg; --base-translate-y: -10px; --base-scale: 1.1;">
-        <div class="w-full h-full">
-            <img src="{coffeeLogo1}" alt="" class="w-full h-full object-cover transform-gpu" />
-        </div>
+        <img src="{coffeeLogo1}" alt="" class="w-full h-full object-contain p-2" />
     </div>
     
-    <div class="ml-15 animate-float-loop [animation-delay:1600ms] w-20 h-28 md:w-32 md:h-40 bg-zinc-900 border border-white/10 rounded-xl md:rounded-2xl shadow-2xl overflow-hidden transition-all duration-700"
-         style="--x-spread: clamp(130px, 25vw, 160px); --base-rotate: 12deg; --base-translate-y: 40px; --base-scale: 0.9;">
-        <div class="w-full h-full">
-            <img src="{coffeeLogo3}" alt="" class="w-full h-full object-cover transform-gpu" />
-        </div>
+    <div class="ml-5 animate-float-loop [animation-delay:1600ms] w-24 h-24 md:w-32 md:h-32 bg-[#4842a4] border border-white/10 rounded-2xl shadow-2xl overflow-hidden transition-all duration-700"
+         style="--x-spread: 80px; --base-rotate: 12deg; --base-translate-y: 40px; --base-scale: 0.8;">
+        <img src="{coffeeLogo3}" alt="" class="w-full h-full object-contain p-2" />
     </div>
 </div>
   </div>
