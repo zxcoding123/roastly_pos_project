@@ -53,9 +53,12 @@
       </a>
     </div>
 
-      <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white mt-20 uppercase">
-    View Demo Below
+      <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white mt-20 ">
+    View Demo Below <br/>
+     <span class="text-sm font-bold tracking-tight text-center text-[#338f2b] ">(Only for Android Phones.)</span>
   </h1>
+
+  
 
    <div class="mt-50 lg:mt-100 relative group"> <div class="absolute inset-0 -top-16 flex justify-center pointer-events-none">
 <div class="absolute inset-0 -top-15 md:-top-40 flex justify-center pointer-events-none scale-75 md:scale-100">
@@ -93,7 +96,7 @@
   </div>
 </div>
   </div>
-  <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-white mt-20 uppercase text-center">Only for Android Phones.</h1>
+ 
 </section>
 
 <Features />
