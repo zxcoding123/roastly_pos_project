@@ -78,7 +78,7 @@
     <video 
   controls 
   muted 
-  className="w-full h-full object-cover"
+  class="w-full h-full object-cover"
 >
   <source src={video} type="video/mp4" />
   Your browser does not support the video tag.
