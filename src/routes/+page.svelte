@@ -57,7 +57,7 @@
     View Demo Below
   </h1>
 
-   <div class="lg:mt-100 relative group"> <div class="absolute inset-0 -top-16 flex justify-center pointer-events-none">
+   <div class="mt-50 lg:mt-100 relative group"> <div class="absolute inset-0 -top-16 flex justify-center pointer-events-none">
 <div class="absolute inset-0 -top-15 md:-top-40 flex justify-center pointer-events-none scale-75 md:scale-100">
     
     <div class="mr-5 animate-float-loop w-24 h-24 md:w-32 md:h-32 bg-[#4842a4] border border-white/10 rounded-2xl shadow-2xl overflow-hidden transition-all duration-700"
