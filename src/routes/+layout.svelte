@@ -55,15 +55,24 @@
   </div>
 
   <div class="flex items-center">
-    <button 
-      onclick={toggleMenu}
-      class="md:hidden relative z-[110] w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none"
-      aria-label="Toggle Menu"
-    >
-      <span class="w-6 h-0.5 bg-white transition-all duration-300 {isMenuOpen ? 'rotate-45 translate-y-2' : ''}"></span>
-      <span class="w-6 h-0.5 bg-white transition-all duration-300 {isMenuOpen ? 'opacity-0' : ''}"></span>
-      <span class="w-6 h-0.5 bg-white transition-all duration-300 {isMenuOpen ? '-rotate-45 -translate-y-2' : ''}"></span>
-    </button>
+ <button 
+  onclick={toggleMenu} data-umami-event="nav-click"
+    data-umami-event-name="Navigation Link Clicked: Toggle Menu"
+  class="md:hidden relative z-[110] w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none cursor-pointer group"
+  aria-label="Toggle Menu"
+>
+  <span class="w-6 h-0.5 transition-all duration-300 
+    {isMenuOpen ? 'rotate-45 translate-y-2 bg-blue-500' : 'bg-white group-hover:bg-blue-500'}">
+  </span>
+  
+  <span class="w-6 h-0.5 transition-all duration-300 
+    {isMenuOpen ? 'opacity-0' : 'bg-white group-hover:bg-blue-500'}">
+  </span>
+  
+  <span class="w-6 h-0.5 transition-all duration-300 
+    {isMenuOpen ? '-rotate-45 -translate-y-2 bg-blue-500' : 'bg-white group-hover:bg-blue-500'}">
+  </span>
+</button>
 
     <a href="#contact" class="hidden md:block">
       <button class="btn-primary text-sm px-5 py-2 cursor-pointer transition-transform active:scale-95">
