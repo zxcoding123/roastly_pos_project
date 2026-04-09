@@ -6,6 +6,21 @@
     import coffeeLogo3 from '$lib/assets/coffee_pos_icon_order_taker.png';
     import video from '$lib/assets/demo.webm'; 
     let email = $state("");
+
+    $effect(() => {
+    
+    const timer = setTimeout(() => {
+      if (typeof umami !== 'undefined') {
+        umami.track('engaged-reader', { page: 'landing-page' });
+        console.log("10s reached - Umami tracked!");
+      }
+    }, 10000);
+
+    return () => {
+      console.log("User left before 10s or component destroyed.");
+      clearTimeout(timer);
+    };
+  });
 </script>
 
 <style>
@@ -24,7 +39,7 @@
   }
 </style>
 
-<section class="relative min-h-[90vh] flex flex-col items-center justify-center px-6 pt-20">
+<section class="relative min-h-[90vh] flex flex-col items-center justify-center px-6 pt-20" id="home">
   <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-150 h-75 bg-blue-500/10 blur-[120px] z-10"></div>
 
   <div class="max-w-4xl text-center space-y-10">

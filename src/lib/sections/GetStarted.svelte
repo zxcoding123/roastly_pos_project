@@ -12,20 +12,30 @@
       
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
   
-  <div class="space-y-2">
-    <p class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest px-2">Email Us</p>
-    <div class="glass-card p-6 space-y-4 hover:bg-white/[0.03] transition-all">
-      <a href="mailto:ahmadaquino.2002@gmail.com" class="block group">
-        <p class="text-[10px] text-zinc-500 uppercase font-bold mb-1">Ahmad</p>
-        <p class="text-[11px] text-white font-bold group-hover:text-blue-400 transition-colors">ahmadaquino.2002@gmail.com</p>
-      </a>
-      <a href="mailto:alilfahad403@gmail.com" class="block group border-t border-white/5 pt-4">
-        <p class="text-[10px] text-zinc-500 uppercase font-bold mb-1">Fahad</p>
-        <p class="text-[11px] text-white font-bold group-hover:text-blue-400 transition-colors">alilfahad403@gmail.com</p>
-      </a>
-    </div>
-  </div>
+ <div class="space-y-2">
+  <p class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest px-2">Email Us</p>
+  <div class="glass-card p-6 space-y-4 hover:bg-white/[0.03] transition-all">
+    
+    <a href="mailto:ahmadaquino.2002@gmail.com" 
+       class="block group"
+       data-umami-event="contact-email"
+       data-umami-event-target="Ahmad"
+    >
+      <p class="text-[10px] text-zinc-500 uppercase font-bold mb-1">Ahmad</p>
+      <p class="text-[11px] text-white font-bold group-hover:text-blue-400 transition-colors">ahmadaquino.2002@gmail.com</p>
+    </a>
 
+    <a href="mailto:alilfahad403@gmail.com" 
+       class="block group border-t border-white/5 pt-4"
+       data-umami-event="contact-email"
+       data-umami-event-target="Fahad"
+    >
+      <p class="text-[10px] text-zinc-500 uppercase font-bold mb-1">Fahad</p>
+      <p class="text-[11px] text-white font-bold group-hover:text-blue-400 transition-colors">alilfahad403@gmail.com</p>
+    </a>
+    
+  </div>
+</div>
   <div class="space-y-2">
     <p class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest px-2">Messenger</p>
     <div class="glass-card p-6 space-y-4 hover:bg-white/[0.03] transition-all">
@@ -46,7 +56,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
         <div class="flex flex-col">
           <span class="text-[9px] text-blue-500 font-bold uppercase mb-1">Ahmad Aquino</span>
-          <span class="text-white font-bold tracking-tight">+63 953 664 0119</span>
+          <span class="text-white font-bold tracking-tight">+63 935 077 1951</span>
         </div>
         <div class="flex flex-col border-l border-white/5 pl-0 sm:pl-8">
           <span class="text-[9px] text-blue-500 font-bold uppercase mb-1">Fahad Alil</span>
