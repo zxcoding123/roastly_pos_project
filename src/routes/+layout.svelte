@@ -21,6 +21,12 @@
       document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
     }
   };
+
+  const trackNav = (name) => {
+    if (window.umami) {
+      umami.track('Navigation Link Clicked', { name: name });
+    }
+  };
 </script>
 
 <CursorBlob />
@@ -28,7 +34,8 @@
 <div class="min-h-screen flex flex-col overflow-x-hidden bg-black text-white">
   <nav class="fixed top-0 w-full z-[100] border-b border-white/5 bg-black/50 backdrop-blur-md">
    <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
-  <a href="/" class="flex items-center gap-2 outline-none group">
+  <a href="/"  data-umami-event="nav-click"
+    data-umami-event-name="Clicked on home" class="flex items-center gap-2 outline-none group">
     <div class="w-8 h-8 rounded-lg shadow-lg overflow-hidden border border-white/10 group-hover:border-white/20 transition-colors">
       <img src="{coffeeLogo}" alt="Roastly Logo" class="w-full h-full object-cover" />
     </div>
@@ -36,9 +43,20 @@
   </a>
   
   <div class="hidden md:flex gap-10 text-sm font-medium text-zinc-400">
-    {#each navLinks as link (link.name)}
-      <a href={link.href} class="hover:text-white transition-colors">{link.name}</a>
-    {/each}
+   {#each navLinks as link, i (link.name)}
+  <div transition:fly={{ y: 30, delay: 150 + (i * 60), duration: 600 }}>
+    <a 
+      href={link.href} 
+      onclick={() => {
+        trackNav(`Mobile: ${link.name}`); // Specific tag for mobile
+        toggleMenu();
+      }}
+      class="text-6xl font-black tracking-tighter text-white hover:text-blue-500 transition-all duration-300 block active:scale-95"
+    >
+      {link.name}
+    </a>
+  </div>
+{/each}
   </div>
 
   <div class="flex items-center">
@@ -52,11 +70,14 @@
       <span class="w-6 h-0.5 bg-white transition-all duration-300 {isMenuOpen ? '-rotate-45 -translate-y-2' : ''}"></span>
     </button>
 
-    <a href="#contact" class="hidden md:block">
-      <button class="btn-primary text-sm px-5 py-2 cursor-pointer transition-transform active:scale-95">
-        Get Started
-      </button>
-    </a>
+   <a href="#contact" class="hidden md:block">
+  <button 
+    onclick={() => trackNav('CTA: Get Started')}
+    class="btn-primary text-sm px-5 py-2 cursor-pointer transition-transform active:scale-95"
+  >
+    Get Started
+  </button>
+</a>
   </div>
 </div>
   </nav>
