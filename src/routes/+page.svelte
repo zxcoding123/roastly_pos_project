@@ -63,7 +63,8 @@
     </p>
 
     <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-6">
-      <a href="#contact" class="cursor-pointer z-10 w-full sm:w-auto bg-white text-black font-bold px-8 py-4 rounded-2xl hover:bg-zinc-200 transition-all active:scale-95">
+      <a href="#contact"  data-umami-event="nav-click"
+    data-umami-event-name="Navigation Link Clicked: Early Access" class="cursor-pointer z-10 w-full sm:w-auto bg-white text-black font-bold px-8 py-4 rounded-2xl hover:bg-zinc-200 transition-all active:scale-95">
         Request Early Access and Shop Integration
       </a>
     </div>
