@@ -6,6 +6,7 @@
       size: "col-span-1",
       icon: "🔐"
     },
+    
     {
       title: "Real-time Sync",
       desc: "Instant synchronization between the counter and the kitchen, even offline.",
@@ -24,6 +25,7 @@
       size: "col-span-1",
       icon: "🔔"
     },
+    
     {
       title: "Barista Dashboard",
       desc: "A focused interface designed for speed and high-volume orders.",
@@ -41,7 +43,13 @@
       desc: "Full audit logs of every transaction, modification, and refund.",
       size: "col-span-1",
       icon: "🕒"
-    }
+    },
+    {
+  title: "Local-First Architecture",
+  desc: "Zero downtime. Your POS continues to function perfectly even when the internet goes out.",
+  size: "col-span-1 md:col-span-3", // Large card to highlight this core USP
+  icon: "🌐"
+},
   ];
 </script>
 
