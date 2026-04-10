@@ -47,9 +47,18 @@
       <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
       Serving Dubai Coffee, Zamboanga
     </div> -->
-<h1 class="text-6xl md:text-8xl font-black tracking-tight text-[#4842a4] [text-shadow:2px_2px_0px_#FFFFFF]">
-  ROASTLY.
-</h1>
+<div class="flex flex-col items-center gap-2">
+  <h1 class="text-6xl md:text-8xl font-black tracking-tight text-[#4842a4] [text-shadow:2px_2px_0px_#FFFFFF] leading-none">
+    ROASTLY.
+  </h1>
+  
+  <div class="inline-flex items-center px-3 py-1 rounded-full bg-[#1A2E1A] border border-[#81C784]/30">
+    <span class="w-1.5 h-1.5 rounded-full bg-[#81C784] animate-pulse mr-2"></span>
+    <span class="text-[10px] font-bold tracking-widest text-[#81C784] uppercase">
+      Alpha Phase
+    </span>
+  </div>
+</div>
 
     <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white"> 
       Modern Mobile-Friendly POS.<br />
