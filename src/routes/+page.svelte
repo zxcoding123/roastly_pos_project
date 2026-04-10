@@ -47,11 +47,11 @@
       <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
       Serving Dubai Coffee, Zamboanga
     </div> -->
-<h1 class="text-6xl md:text-8xl font-black tracking-tight text-[#4842a4] [text-shadow:4px_4px_0px_rgba(255,255,255,0.05)]">
+<h1 class="text-6xl md:text-8xl font-black tracking-tight text-[#4842a4] [text-shadow:2px_2px_0px_#FFFFFF]">
   ROASTLY.
 </h1>
 
-    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white">
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white"> 
       Modern Mobile-Friendly POS.<br />
       <span class="opacity-60">Resilient by design.</span> <br/>
    
