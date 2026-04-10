@@ -76,7 +76,7 @@
      class="glass-card p-6 flex justify-between items-center group hover:bg-white/[0.05]  transition-all block">
     <div>
       <p class="text-[10px] text-blue-400 uppercase font-bold mb-1">Book a Meeting</p>
-      <p class="text-white font-bold tracking-tight">Schedule a 30-minute Discovery Call</p>
+      <p class="text-white font-bold tracking-tight">Schedule a Call/Meeting</p>
     </div>
     <div class="flex items-center gap-3">
       <span class="text-[10px] text-zinc-500 font-mono uppercase opacity-0 group-hover:opacity-100 transition-opacity">View Calendar →</span>
