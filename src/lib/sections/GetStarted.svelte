@@ -69,6 +69,24 @@
     </div>
   </div>
 
+ <div class="sm:col-span-2 space-y-2">
+  <p class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest px-2">Availability</p>
+  <a href="https://calendly.com/ahmadaquino-roastly/30min" data-umami-event-name="Book Calendly Meeting Clicked"
+     target="_blank" 
+     class="glass-card p-6 flex justify-between items-center group hover:bg-white/[0.05]  transition-all block">
+    <div>
+      <p class="text-[10px] text-blue-400 uppercase font-bold mb-1">Book a Meeting</p>
+      <p class="text-white font-bold tracking-tight">Schedule a 30-minute Discovery Call</p>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="text-[10px] text-zinc-500 font-mono uppercase opacity-0 group-hover:opacity-100 transition-opacity">View Calendar →</span>
+      <div class="w-10 h-10 rounded-full bg-blue-600/20 flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+        <span class="text-xs">📅</span>
+      </div>
+    </div>
+  </a>
+</div>
+
 </div>
     </div>
 
