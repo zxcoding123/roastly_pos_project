@@ -5,6 +5,7 @@
     import coffeeLogo2 from '$lib/assets/coffee_pos_icon_barista.png';
     import coffeeLogo3 from '$lib/assets/coffee_pos_icon_order_taker.png';
     import video from '$lib/assets/demo.webm'; 
+	import Pricing from "$lib/sections/Pricing.svelte";
     let email = $state("");
 
     $effect(() => {
@@ -126,4 +127,5 @@
 </section>
 
 <Features />
+<Pricing />
 <AppSuite />
